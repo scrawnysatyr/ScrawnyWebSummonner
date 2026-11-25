@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrawny Summoner — Native Download Manager &amp; Stream Summoner</title>
+    <meta
+      name="description"
+      content="Scrawny Summoner is a fast native download manager built in Rust & GPUI supporting direct files, BitTorrent, yt-dlp videos, and HLS/DASH streams."
+    />
+    <meta name="theme-color" content="#141418" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2318181d'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='36' fill='%23ff7300'>S</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="https://scrawny.site">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-name">summoner.<span class="accent">scrawny.site</span></span>
+        </a>
+        <nav class="topbar-links" aria-label="Links">
+          <a class="topbar-link" href="https://scrawny.site">&larr; All Tools</a>
+          <a
+            class="topbar-link"
+            href="https://github.com/scrawnysatyr/scrawnysummoner"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="profile-card" aria-labelledby="hero-heading">
+          <div class="profile-avatar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#ff7300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12" />
+              <path d="m7 10 5 5 5-5" />
+              <path d="M5 20h14" />
+            </svg>
+          </div>
+
+          <div class="profile-body">
+            <div class="profile-title-row">
+              <h1 id="hero-heading">Scrawny Summoner</h1>
+              <span class="status-pill">
+                <span class="status-dot" aria-hidden="true"></span>
+                Desktop Download Manager
+              </span>
+            </div>
+            <p class="profile-bio">
+              Native desktop download manager and stream summoner built in Rust with GPUI. Handles
+              direct files, BitTorrent, <span class="mono accent">yt-dlp</span> videos, and
+              HLS/DASH streams with a companion Chrome extension.
+            </p>
+            <div class="profile-meta">
+              <a
+                class="meta-chip meta-chip-primary"
+                href="https://github.com/scrawnysatyr/scrawnysummoner/releases/latest"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Latest Release
+                <span aria-hidden="true">&darr;</span>
+              </a>
+              <a
+                class="meta-chip"
+                href="https://github.com/scrawnysatyr/scrawnysummoner"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source on GitHub &nearr;
+              </a>
+              <span class="meta-chip">Rust &amp; GPUI</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="directory-section" aria-labelledby="features-heading">
+          <div class="section-header">
+            <div>
+              <h2 id="features-heading">Core Capabilities</h2>
+              <p class="section-subtitle">One native download manager for files, torrents, and web streams.</p>
+            </div>
+          </div>
+
+          <div class="cards-grid">
+            <div class="project-card">
+              <div class="card-top">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3v12" />
+                    <path d="m7 10 5 5 5-5" />
+                    <path d="M5 20h14" />
+                  </svg>
+                </div>
+                <span class="badge badge-orange">Direct</span>
+              </div>
+              <div class="card-content">
+                <h3>Fast Direct Downloads</h3>
+                <p class="card-description">
+                  Reliable HTTP/HTTPS file downloading with pause, resume, queue management, and
+                  clean progress tracking.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="card-top">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3.6 9h16.8" />
+                    <path d="M3.6 15h16.8" />
+                    <path d="M11.5 3a17 17 0 0 0 0 18" />
+                    <path d="M12.5 3a17 17 0 0 1 0 18" />
+                  </svg>
+                </div>
+                <span class="badge badge-orange">P2P</span>
+              </div>
+              <div class="card-content">
+                <h3>Built-in BitTorrent</h3>
+                <p class="card-description">
+                  Handle `.torrent` files and magnet links natively inside the same app without
+                  needing a separate torrent client.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="card-top">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                </div>
+                <span class="badge badge-orange">Streams</span>
+              </div>
+              <div class="card-content">
+                <h3>yt-dlp &amp; HLS/DASH</h3>
+                <p class="card-description">
+                  Summon videos and adaptive HLS/DASH streams directly from supported URLs with
+                  format and quality selection.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="card-top">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8" />
+                    <path d="M12 17v4" />
+                  </svg>
+                </div>
+                <span class="badge badge-live">Extension</span>
+              </div>
+              <div class="card-content">
+                <h3>Chrome Extension + GPUI</h3>
+                <p class="card-description">
+                  Send downloads and detected media streams straight from Chrome into a fast,
+                  GPU-rendered Rust + GPUI desktop window.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span><span class="accent">summoner.scrawny.site</span> &mdash; Scrawny Summoner</span>
+        <span class="mono">
+          <a href="https://scrawny.site" style="color: inherit; text-decoration: none;">scrawny.site</a>
+          &middot; github.com/scrawnysatyr
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
